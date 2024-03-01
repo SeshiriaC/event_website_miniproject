@@ -1,31 +1,51 @@
-.header {
-    background-color: #F1F1F1;
+body header h1{
     text-align: center;
-    padding: 20px;
+
   }
 
+
+/* Body content*/
 body {
     background-image: url('./images/bts-army.webp');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    font-family: monospace ;
+    background-color: #000000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size:medium;
+    margin-left: 0;
+    margin-right: 0;
+
   }
 
+body p,h1,h2 {
+    color: #ddd;
+}
+
+/* Main content */
+main {
+    background-color:rgb(0, 0, 0, 0.7);
+    background-attachment: scroll;
+    float:inline-start;
+}
+
+main h2,p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 /* The navbar container */
 .topnav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
 .topnav {
-    overflow: hidden;
+    overflow:hidden;
     background-color: #000000;
   }
   
   /* Navbar links */
   .topnav a {
-    float:inline-start;
     display:grid;
     color: #f2f2f2;
     text-align: center;
@@ -33,6 +53,15 @@ body {
     text-decoration: none;
   }
   
+  .topnavleft a{
+    float:inline-start;
+  }
+
+  .topnavright a{
+    float:inline-end;
+  }
+
+
   /* Links - change color on hover */
   .topnav a:hover {
     background-color: #ddd;
